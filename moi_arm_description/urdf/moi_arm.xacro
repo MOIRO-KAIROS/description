@@ -46,11 +46,65 @@
   </collision>
 </link>
 
+<link name="Component3_1">
+  <inertial>
+    <origin xyz="-5.108764106198649e-11 -0.007982482847528932 0.002397358752411101" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="4e-06" izz="5e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin xyz="-5.108793249553045e-11 -0.007982482441365773 0.0023973587524110662" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="4e-06" izz="5e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Revolute 1" type="continuous">
   <origin xyz="0.0 0.0 0.043" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Component2_1"/>
   <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="-0.0318 0.008 0.003" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component3_1"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="0.0318 0.008 0.003" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component4_1"/>
 </joint>
 
 </robot>
