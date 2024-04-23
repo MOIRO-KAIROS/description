@@ -256,6 +256,27 @@
   </collision>
 </link>
 
+<link name="Component9_1">
+  <inertial>
+    <origin xyz="-0.05300000011434975 6.865823318272569e-07 0.03104840421136143" rpy="0 0 0"/>
+    <mass value="0.7282309507071387"/>
+    <inertia ixx="0.000224" iyy="0.000822" izz="0.000727" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.05275 -0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.05275 -0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Revolute 1" type="continuous">
   <origin xyz="0.0 0.0 0.043" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -323,6 +344,12 @@
   <origin xyz="-0.016 -0.016 0.0055" rpy="0 0 0"/>
   <parent link="Component3_1"/>
   <child link="Component7_2"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="0.003 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component5_1"/>
+  <child link="Component9_1"/>
 </joint>
 
 </robot>
