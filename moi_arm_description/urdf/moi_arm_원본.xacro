@@ -1,0 +1,707 @@
+<?xml version="1.0" ?>
+<robot name="moi_arm_원본" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find moi_arm_원본_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find moi_arm_원본_description)/urdf/moi_arm_원본.trans" />
+<xacro:include filename="$(find moi_arm_원본_description)/urdf/moi_arm_원본.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-2.3204052621237496e-08 -9.341746626578682e-05 0.007097721551323412" rpy="0 0 0"/>
+    <mass value="1.1963019403514967"/>
+    <inertia ixx="0.003058" iyy="0.003068" izz="0.005691" ixy="0.0" iyz="-1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2_1">
+  <inertial>
+    <origin xyz="-1.723794702839714e-07 -0.0006862862107224133 0.0014991079387778813" rpy="0 0 0"/>
+    <mass value="0.2779523828869321"/>
+    <inertia ixx="0.000265" iyy="0.000272" izz="0.000536" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.043" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.043" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_1">
+  <inertial>
+    <origin xyz="-5.108764106198649e-11 -0.007982482847528932 0.002397358752411101" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="4e-06" izz="5e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin xyz="-5.108793249553045e-11 -0.007982482441365773 0.0023973587524110662" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="4e-06" izz="5e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0318 -0.008 -0.046" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_1">
+  <inertial>
+    <origin xyz="0.0005767749991517357 2.0306988590679254e-10 5.249550794061975e-13" rpy="0 0 0"/>
+    <mass value="0.013145620261468437"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04975 -0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04975 -0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_1">
+  <inertial>
+    <origin xyz="-0.001811963186310439 -0.00800002657181841 0.02115293589470097" rpy="0 0 0"/>
+    <mass value="0.061219272040330903"/>
+    <inertia ixx="1.4e-05" iyy="1e-05" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0478 -0.008 -0.0515" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0478 -0.008 -0.0515" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_1">
+  <inertial>
+    <origin xyz="-0.002777924827504729 -0.009249999796888161 -0.022456634580485635" rpy="0 0 0"/>
+    <mass value="0.051461187075064724"/>
+    <inertia ixx="1.4e-05" iyy="1e-05" izz="4e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0208 -0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0208 -0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_1">
+  <inertial>
+    <origin xyz="-0.011000000051089809 0.009250000203081518 -0.021533510873839742" rpy="0 0 0"/>
+    <mass value="0.20992105246147483"/>
+    <inertia ixx="5e-05" iyy="4.7e-05" izz="2e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0428 0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0428 0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_2">
+  <inertial>
+    <origin xyz="-0.000576775101334262 -2.0306992198904084e-10 5.230954558399503e-13" rpy="0 0 0"/>
+    <mass value="0.013145620261468437"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04975 0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04975 0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_2">
+  <inertial>
+    <origin xyz="0.010999999948906665 0.009249999796918516 -0.021533510873841685" rpy="0 0 0"/>
+    <mass value="0.20992105246147483"/>
+    <inertia ixx="5e-05" iyy="4.7e-05" izz="2e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0428 0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0428 0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_2">
+  <inertial>
+    <origin xyz="0.0027779247253222235 0.009249999796888243 -0.022456634580487425" rpy="0 0 0"/>
+    <mass value="0.051461187075064724"/>
+    <inertia ixx="1.4e-05" iyy="1e-05" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0208 0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0208 0.00925 -0.0965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_2">
+  <inertial>
+    <origin xyz="0.0018119630841314932 0.00800002657181839 0.021152935894701345" rpy="0 0 0"/>
+    <mass value="0.061219272040330903"/>
+    <inertia ixx="1.4e-05" iyy="1e-05" izz="4e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0478 0.008 -0.0515" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0478 0.008 -0.0515" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component9_1">
+  <inertial>
+    <origin xyz="-0.05300000011434975 6.865823318272569e-07 0.03104840421136143" rpy="0 0 0"/>
+    <mass value="0.7282309507071387"/>
+    <inertia ixx="0.000224" iyy="0.000822" izz="0.000727" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.05275 -0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.05275 -0.0 -0.0875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component10_1">
+  <inertial>
+    <origin xyz="0.011999883043338091 0.009500621991842925 0.052942045256373" rpy="0 0 0"/>
+    <mass value="1.0029838563695943"/>
+    <inertia ixx="0.001903" iyy="0.002087" izz="0.000249" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01225 0.0105 -0.140471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01225 0.0105 -0.140471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component11_1">
+  <inertial>
+    <origin xyz="-0.025499995615561606 -0.010489850015523317 0.024038190431412254" rpy="0 0 0"/>
+    <mass value="1.3070276306401278"/>
+    <inertia ixx="0.00073" iyy="0.000996" izz="0.000968" ixy="0.0" iyz="0.000122" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02425 0.001 -0.264471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02425 0.001 -0.264471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_2">
+  <inertial>
+    <origin xyz="-0.008000000795058925 -0.0023971512709183643 -0.007982236953474553" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="5e-06" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.03855 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.03855 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_3">
+  <inertial>
+    <origin xyz="-0.00800000079505896 -0.002397151270918392 -0.007982236936011355" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="5e-06" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02505 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02505 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_3">
+  <inertial>
+    <origin xyz="0.0005767742551691102 2.0749739274017465e-07 2.0905313929953095e-07" rpy="0 0 0"/>
+    <mass value="0.013145620261468437"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0485 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0485 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_3">
+  <inertial>
+    <origin xyz="-0.011000000795072289 0.02153371837175154 -0.009249779194856811" rpy="0 0 0"/>
+    <mass value="0.20992105246147483"/>
+    <inertia ixx="5e-05" iyy="2e-05" izz="4.7e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04155 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04155 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_3">
+  <inertial>
+    <origin xyz="-0.0027779255714870943 0.02245684207839692 -0.009249778320855717" rpy="0 0 0"/>
+    <mass value="0.051461187075064724"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.01955 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.01955 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_3">
+  <inertial>
+    <origin xyz="-0.0018119639302930923 -0.02115272839676497 -0.007999803812389517" rpy="0 0 0"/>
+    <mass value="0.061219272040330903"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04655 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04655 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_4">
+  <inertial>
+    <origin xyz="-0.0005767758453047722 2.074973926846635e-07 2.0909572706617752e-07" rpy="0 0 0"/>
+    <mass value="0.013145620261468437"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.051 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.051 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component5_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_4">
+  <inertial>
+    <origin xyz="0.010999999204936745 0.021533718371751512 -0.009249779177389783" rpy="0 0 0"/>
+    <mass value="0.20992105246147483"/>
+    <inertia ixx="5e-05" iyy="2e-05" izz="4.7e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04405 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04405 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_4">
+  <inertial>
+    <origin xyz="0.0027779239813514357 0.02245684207839671 -0.009249778322113822" rpy="0 0 0"/>
+    <mass value="0.051461187075064724"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02205 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02205 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_4">
+  <inertial>
+    <origin xyz="0.0018119623401476256 -0.021152728396815167 -0.007999750225906876" rpy="0 0 0"/>
+    <mass value="0.061219272040330903"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04905 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04905 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component9_2">
+  <inertial>
+    <origin xyz="-0.05300000085833196 -0.03104819671407337 8.663853407475663e-07" rpy="0 0 0"/>
+    <mass value="0.7282309507071387"/>
+    <inertia ixx="0.000224" iyy="0.000727" izz="0.000822" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0515 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component9_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0515 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_원본_description)/meshes/Component9_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 0.0 0.043" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component2_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="-0.0318 0.008 0.003" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component3_1"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="0.0318 0.008 0.003" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component4_1"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.00195 -0.008 0.036" rpy="0 0 0"/>
+  <parent link="Component7_1"/>
+  <child link="Component5_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="0.016 0.0 0.0055" rpy="0 0 0"/>
+  <parent link="Component4_1"/>
+  <child link="Component7_1"/>
+</joint>
+
+<joint name="Rigid 8" type="fixed">
+  <origin xyz="-0.022 0.0185 0.0" rpy="0 0 0"/>
+  <parent link="Component6_1"/>
+  <child link="Component8_1"/>
+</joint>
+
+<joint name="Rigid 9" type="fixed">
+  <origin xyz="-0.005 -0.01725 0.045" rpy="0 0 0"/>
+  <parent link="Component7_1"/>
+  <child link="Component6_1"/>
+</joint>
+
+<joint name="Revolute 10" type="continuous">
+  <origin xyz="-0.00195 0.008 0.036" rpy="0 0 0"/>
+  <parent link="Component7_2"/>
+  <child link="Component5_2"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="0.005 -0.00125 0.045" rpy="0 0 0"/>
+  <parent link="Component7_2"/>
+  <child link="Component6_2"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="0.022 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component6_2"/>
+  <child link="Component8_2"/>
+</joint>
+
+<joint name="Rigid 13" type="fixed">
+  <origin xyz="-0.016 -0.016 0.0055" rpy="0 0 0"/>
+  <parent link="Component3_1"/>
+  <child link="Component7_2"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="0.003 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component5_1"/>
+  <child link="Component9_1"/>
+</joint>
+
+<joint name="Rigid 15" type="fixed">
+  <origin xyz="-0.065 -0.0105 0.052971" rpy="0 0 0"/>
+  <parent link="Component9_1"/>
+  <child link="Component10_1"/>
+</joint>
+
+<joint name="Rigid 16" type="fixed">
+  <origin xyz="0.0365 0.0095 0.124" rpy="0 0 0"/>
+  <parent link="Component10_1"/>
+  <child link="Component11_1"/>
+</joint>
+
+<joint name="Rigid 17" type="fixed">
+  <origin xyz="0.0143 -0.040981 0.040971" rpy="0 0 0"/>
+  <parent link="Component11_1"/>
+  <child link="Component3_2"/>
+</joint>
+
+<joint name="Rigid 18" type="fixed">
+  <origin xyz="-0.0493 -0.040981 0.040971" rpy="0 0 0"/>
+  <parent link="Component11_1"/>
+  <child link="Component3_3"/>
+</joint>
+
+<joint name="Revolute 19" type="continuous">
+  <origin xyz="0.00195 -0.036 -0.008" rpy="0 0 0"/>
+  <parent link="Component7_3"/>
+  <child link="Component5_3"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Rigid 20" type="fixed">
+  <origin xyz="-0.005 -0.045 0.00125" rpy="0 0 0"/>
+  <parent link="Component7_3"/>
+  <child link="Component6_3"/>
+</joint>
+
+<joint name="Rigid 21" type="fixed">
+  <origin xyz="-0.022 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component6_3"/>
+  <child link="Component8_3"/>
+</joint>
+
+<joint name="Rigid 22" type="fixed">
+  <origin xyz="0.008 -0.0055 0.0" rpy="0 0 0"/>
+  <parent link="Component3_2"/>
+  <child link="Component7_3"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="-0.00195 -0.036 -0.008" rpy="0 0 0"/>
+  <parent link="Component7_4"/>
+  <child link="Component5_4"/>
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="0.005 -0.045 0.00125" rpy="0 0 0"/>
+  <parent link="Component7_4"/>
+  <child link="Component6_4"/>
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="0.022 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component6_4"/>
+  <child link="Component8_4"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="-0.024 -0.0055 0.0" rpy="0 0 0"/>
+  <parent link="Component3_3"/>
+  <child link="Component7_4"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="0.003 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component5_3"/>
+  <child link="Component9_2"/>
+</joint>
+
+</robot>

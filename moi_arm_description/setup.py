@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'moi_arm_description'
+package_name = 'moi_arm_¿øº»_description'
 
 setup(
     name=package_name,

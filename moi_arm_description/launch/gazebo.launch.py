@@ -10,9 +10,9 @@ from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
-    share_dir = get_package_share_directory('moi_arm_description')
+    share_dir = get_package_share_directory('moi_arm_원본_description')
 
-    xacro_file = os.path.join(share_dir, 'urdf', 'moi_arm.xacro')
+    xacro_file = os.path.join(share_dir, 'urdf', 'moi_arm_원본.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
 
@@ -58,7 +58,7 @@ def generate_launch_description():
         package='gazebo_ros',
         executable='spawn_entity.py',
         arguments=[
-            '-entity', 'moi_arm',
+            '-entity', 'moi_arm_원본',
             '-topic', 'robot_description'
         ],
         output='screen'
