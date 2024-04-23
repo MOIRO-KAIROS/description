@@ -277,6 +277,90 @@
   </collision>
 </link>
 
+<link name="Component10_1">
+  <inertial>
+    <origin xyz="0.011999883043338091 0.009500621991842925 0.052942045256373" rpy="0 0 0"/>
+    <mass value="1.0029838563695943"/>
+    <inertia ixx="0.001903" iyy="0.002087" izz="0.000249" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01225 0.0105 -0.140471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01225 0.0105 -0.140471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component10_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component11_1">
+  <inertial>
+    <origin xyz="-0.025499995615561606 -0.010489850015523317 0.024038190431412254" rpy="0 0 0"/>
+    <mass value="1.3070276306401278"/>
+    <inertia ixx="0.00073" iyy="0.000996" izz="0.000968" ixy="0.0" iyz="0.000122" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02425 0.001 -0.264471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02425 0.001 -0.264471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component11_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_2">
+  <inertial>
+    <origin xyz="-0.008000000795058925 -0.0023971512709183643 -0.007982236953474553" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="5e-06" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.03855 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.03855 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_3">
+  <inertial>
+    <origin xyz="-0.00800000079505896 -0.002397151270918392 -0.007982236936011355" rpy="0 0 0"/>
+    <mass value="0.02516998505835531"/>
+    <inertia ixx="2e-06" iyy="5e-06" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02505 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02505 0.041981 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Revolute 1" type="continuous">
   <origin xyz="0.0 0.0 0.043" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -350,6 +434,30 @@
   <origin xyz="0.003 0.0 0.0" rpy="0 0 0"/>
   <parent link="Component5_1"/>
   <child link="Component9_1"/>
+</joint>
+
+<joint name="Rigid 15" type="fixed">
+  <origin xyz="-0.065 -0.0105 0.052971" rpy="0 0 0"/>
+  <parent link="Component9_1"/>
+  <child link="Component10_1"/>
+</joint>
+
+<joint name="Rigid 16" type="fixed">
+  <origin xyz="0.0365 0.0095 0.124" rpy="0 0 0"/>
+  <parent link="Component10_1"/>
+  <child link="Component11_1"/>
+</joint>
+
+<joint name="Rigid 17" type="fixed">
+  <origin xyz="0.0143 -0.040981 0.040971" rpy="0 0 0"/>
+  <parent link="Component11_1"/>
+  <child link="Component3_2"/>
+</joint>
+
+<joint name="Rigid 18" type="fixed">
+  <origin xyz="-0.0493 -0.040981 0.040971" rpy="0 0 0"/>
+  <parent link="Component11_1"/>
+  <child link="Component3_3"/>
 </joint>
 
 </robot>
