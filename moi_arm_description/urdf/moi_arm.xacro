@@ -361,6 +361,195 @@
   </collision>
 </link>
 
+<link name="Component5_3">
+  <inertial>
+    <origin xyz="0.0005767742551691102 2.0749739274017465e-07 2.0905313929953095e-07" rpy="0 0 0"/>
+    <mass value="0.013145620261468437"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0485 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component5_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0485 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component5_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_3">
+  <inertial>
+    <origin xyz="-0.011000000795072289 0.02153371837175154 -0.009249779194856811" rpy="0 0 0"/>
+    <mass value="0.20992105246147483"/>
+    <inertia ixx="5e-05" iyy="2e-05" izz="4.7e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04155 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04155 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_3">
+  <inertial>
+    <origin xyz="-0.0027779255714870943 0.02245684207839692 -0.009249778320855717" rpy="0 0 0"/>
+    <mass value="0.051461187075064724"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.01955 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.01955 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_3">
+  <inertial>
+    <origin xyz="-0.0018119639302930923 -0.02115272839676497 -0.007999803812389517" rpy="0 0 0"/>
+    <mass value="0.061219272040330903"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04655 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04655 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_4">
+  <inertial>
+    <origin xyz="-0.0005767758453047722 2.074973926846635e-07 2.0909572706617752e-07" rpy="0 0 0"/>
+    <mass value="0.013145620261468437"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.051 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component5_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.051 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component5_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_4">
+  <inertial>
+    <origin xyz="0.010999999204936745 0.021533718371751512 -0.009249779177389783" rpy="0 0 0"/>
+    <mass value="0.20992105246147483"/>
+    <inertia ixx="5e-05" iyy="2e-05" izz="4.7e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04405 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04405 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_4">
+  <inertial>
+    <origin xyz="0.0027779239813514357 0.02245684207839671 -0.009249778322113822" rpy="0 0 0"/>
+    <mass value="0.051461187075064724"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02205 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02205 0.092481 -0.306692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_4">
+  <inertial>
+    <origin xyz="0.0018119623401476256 -0.021152728396815167 -0.007999750225906876" rpy="0 0 0"/>
+    <mass value="0.061219272040330903"/>
+    <inertia ixx="1.4e-05" iyy="4e-06" izz="1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04905 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04905 0.047481 -0.305442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component9_2">
+  <inertial>
+    <origin xyz="-0.05300000085833196 -0.03104819671407337 8.663853407475663e-07" rpy="0 0 0"/>
+    <mass value="0.7282309507071387"/>
+    <inertia ixx="0.000224" iyy="0.000727" izz="0.000822" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0515 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component9_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0515 0.083481 -0.297442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moi_arm_description)/meshes/Component9_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Revolute 1" type="continuous">
   <origin xyz="0.0 0.0 0.043" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -458,6 +647,61 @@
   <origin xyz="-0.0493 -0.040981 0.040971" rpy="0 0 0"/>
   <parent link="Component11_1"/>
   <child link="Component3_3"/>
+</joint>
+
+<joint name="Revolute 19" type="continuous">
+  <origin xyz="0.00195 -0.036 -0.008" rpy="0 0 0"/>
+  <parent link="Component7_3"/>
+  <child link="Component5_3"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Rigid 20" type="fixed">
+  <origin xyz="-0.005 -0.045 0.00125" rpy="0 0 0"/>
+  <parent link="Component7_3"/>
+  <child link="Component6_3"/>
+</joint>
+
+<joint name="Rigid 21" type="fixed">
+  <origin xyz="-0.022 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component6_3"/>
+  <child link="Component8_3"/>
+</joint>
+
+<joint name="Rigid 22" type="fixed">
+  <origin xyz="0.008 -0.0055 0.0" rpy="0 0 0"/>
+  <parent link="Component3_2"/>
+  <child link="Component7_3"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="-0.00195 -0.036 -0.008" rpy="0 0 0"/>
+  <parent link="Component7_4"/>
+  <child link="Component5_4"/>
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="0.005 -0.045 0.00125" rpy="0 0 0"/>
+  <parent link="Component7_4"/>
+  <child link="Component6_4"/>
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="0.022 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component6_4"/>
+  <child link="Component8_4"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="-0.024 -0.0055 0.0" rpy="0 0 0"/>
+  <parent link="Component3_3"/>
+  <child link="Component7_4"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="0.003 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component5_3"/>
+  <child link="Component9_2"/>
 </joint>
 
 </robot>
