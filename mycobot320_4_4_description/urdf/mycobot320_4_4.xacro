@@ -298,6 +298,8 @@
   </collision>
 </link>
 
+<!-- joint -->
+
 <joint name="joint2_to_joint1" type="continuous">
   <origin xyz="0.0 0.060072 0.114761" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -346,6 +348,8 @@
   <child link="gripper_base_1"/>
 </joint>
 
+<!-- gripper joints -->
+
 <joint name="gripper_controller" type="revolute">
   <origin xyz="0.060541 -0.010461 0.018171" rpy="0 0 0"/>
   <parent link="gripper_base_1"/>
@@ -360,6 +364,7 @@
   <child link="gripper_right1_1"/>
   <axis xyz="-0.000407 -1.0 0.000299"/>
   <limit upper="0.261799" lower="-0.698132" effort="100" velocity="100"/>
+  <mimic joint="gripper_controller" multiplier="-1" offset="0"/>
 </joint>
 
 <joint name="gripper_base_to_gripper_right2" type="revolute">
@@ -368,6 +373,7 @@
   <child link="gripper_right2_1"/>
   <axis xyz="0.000407 1.0 -0.000299"/>
   <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
+  <mimic joint="gripper_controller" multiplier="-1" offset="0"/>
 </joint>
 
 <joint name="gripper_base_to_gripper_left3" type="revolute">
@@ -376,6 +382,7 @@
   <child link="gripper_left3_1"/>
   <axis xyz="-0.000407 -1.0 0.000299"/>
   <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
+  <mimic joint="gripper_controller" multiplier="-1" offset="0"/>
 </joint>
 
 <joint name="gripper_left3_to_gripper_left1" type="revolute">
@@ -384,6 +391,7 @@
   <child link="gripper_left1_1"/>
   <axis xyz="0.000407 1.0 -0.000299"/>
   <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
+  <mimic joint="gripper_controller" multiplier="-1" offset="0"/>
 </joint>
 
 <joint name="gripper_base_to_gripper_left2" type="revolute">
@@ -392,6 +400,7 @@
   <child link="gripper_left2_1"/>
   <axis xyz="-0.000407 -1.0 0.000299"/>
   <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
+  <mimic joint="gripper_controller" multiplier="-1" offset="0"/>
 </joint>
 
 </robot>
