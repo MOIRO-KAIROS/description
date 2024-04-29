@@ -67,34 +67,23 @@
   </actuator>
 </transmission>
 
-<transmission name="gripper_controller_tran">
-  <type>transmission_interface/SimpleTransmission</type>
-  <joint name="gripper_controller">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-  </joint>
-  <actuator name="gripper_controller_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1</mechanicalReduction>
-  </actuator>
-</transmission>
-
-<transmission name="gripper_right3_to_gripper_right1_tran">
-  <type>transmission_interface/SimpleTransmission</type>
-  <joint name="gripper_right3_to_gripper_right1">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-  </joint>
-  <actuator name="gripper_right3_to_gripper_right1_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1</mechanicalReduction>
-  </actuator>
-</transmission>
-
 <transmission name="gripper_base_to_gripper_right2_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="gripper_base_to_gripper_right2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
   <actuator name="gripper_base_to_gripper_right2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="gripper_controller_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_controller">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_controller_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
@@ -111,23 +100,34 @@
   </actuator>
 </transmission>
 
-<transmission name="gripper_left3_to_gripper_left1_tran">
-  <type>transmission_interface/SimpleTransmission</type>
-  <joint name="gripper_left3_to_gripper_left1">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-  </joint>
-  <actuator name="gripper_left3_to_gripper_left1_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1</mechanicalReduction>
-  </actuator>
-</transmission>
-
 <transmission name="gripper_base_to_gripper_left2_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="gripper_base_to_gripper_left2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
   <actuator name="gripper_base_to_gripper_left2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Revolute 41_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 41">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 41_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Revolute 44_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 44">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 44_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
