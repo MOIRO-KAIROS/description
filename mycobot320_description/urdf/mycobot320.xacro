@@ -48,9 +48,9 @@
 
 <link name="link2_1">
   <inertial>
-    <origin xyz="0.036906585755672405 -3.471133772081636e-07 0.06799995568162978" rpy="0 0 0"/>
+    <origin xyz="0.036906585755672516 -3.4711337715265245e-07 0.06799995568162967" rpy="0 0 0"/>
     <mass value="5.91988968680626"/>
-    <inertia ixx="0.0188" iyy="0.019335" izz="0.004161" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+    <inertia ixx="0.0188" iyy="0.019335" izz="0.004161" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.045 -0.060072 -0.199761" rpy="0 0 0"/>
@@ -69,7 +69,7 @@
 
 <link name="link3_1">
   <inertial>
-    <origin xyz="-0.03502268825299221 3.0162871079306153e-05 0.04949994627901183" rpy="0 0 0"/>
+    <origin xyz="-0.03502268825299208 3.0162871079368603e-05 0.04949994627901161" rpy="0 0 0"/>
     <mass value="4.802107093668197"/>
     <inertia ixx="0.01014" iyy="0.010584" izz="0.003386" ixy="0.0" iyz="-4e-06" ixz="0.0"/>
   </inertial>
@@ -90,7 +90,7 @@
 
 <link name="link4_1">
   <inertial>
-    <origin xyz="0.03442387286919221 6.191592391589784e-06 0.010576061998245567" rpy="0 0 0"/>
+    <origin xyz="0.034423872869192323 6.191592391645295e-06 0.010576061998245623" rpy="0 0 0"/>
     <mass value="2.265107015236222"/>
     <inertia ixx="0.001595" iyy="0.001803" izz="0.001595" ixy="-0.0" iyz="-0.0" ixz="-0.000324"/>
   </inertial>
@@ -111,9 +111,9 @@
 
 <link name="link5_1">
   <inertial>
-    <origin xyz="-1.3877787807814457e-16 2.6368392026507315e-05 0.042116616834545706" rpy="0 0 0"/>
+    <origin xyz="5.551115123125783e-17 2.6368392026507315e-05 0.04211661683454615" rpy="0 0 0"/>
     <mass value="3.029827579494103"/>
-    <inertia ixx="0.0025" iyy="0.002976" izz="0.002441" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <inertia ixx="0.0025" iyy="0.002976" izz="0.002441" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.09 -0.06016 -0.479761" rpy="0 0 0"/>
@@ -132,9 +132,9 @@
 
 <link name="link6_1">
   <inertial>
-    <origin xyz="0.009999999999999898 2.2737115904641891e-07 -8.11690367141793e-08" rpy="0 0 0"/>
+    <origin xyz="0.010000000000000203 2.2737115904641891e-07 -8.116903615906779e-08" rpy="0 0 0"/>
     <mass value="0.6042068071016569"/>
-    <inertia ixx="0.00037" iyy="0.000205" izz="0.000205" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <inertia ixx="0.00037" iyy="0.000205" izz="0.000205" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.13 -0.060191 -0.529761" rpy="0 0 0"/>
@@ -153,9 +153,9 @@
 
 <link name="gripper_right2_1">
   <inertial>
-    <origin xyz="0.04032863015670235 -0.0045181195928084145 0.0023767167245389853" rpy="0 0 0"/>
+    <origin xyz="0.033798632816854496 0.022462244408999882 0.0023600870145860098" rpy="0 0 0"/>
     <mass value="0.05940572970223047"/>
-    <inertia ixx="3e-06" iyy="2e-05" izz="2.1e-05" ixy="4e-06" iyz="1e-06" ixz="-2e-06"/>
+    <inertia ixx="6e-06" iyy="1.8e-05" izz="2.1e-05" ixy="-7e-06" iyz="-1e-06" ixz="-2e-06"/>
   </inertial>
   <visual>
     <origin xyz="-0.188135 -0.10458 -0.524876" rpy="0 0 0"/>
@@ -174,9 +174,9 @@
 
 <link name="gripper_right3_1">
   <inertial>
-    <origin xyz="0.0198667775902846 -0.000814717715696564 -0.0033419514827397467" rpy="0 0 0"/>
-    <mass value="0.08857210300231065"/>
-    <inertia ixx="7e-06" iyy="4.2e-05" izz="4.8e-05" ixy="5e-06" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="0.015740982452355612 0.012145444586910983 -0.0033499396529519387" rpy="0 0 0"/>
+    <mass value="0.08857210300231054"/>
+    <inertia ixx="1.6e-05" iyy="3.3e-05" izz="4.8e-05" ixy="-1.6e-05" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.2105 -0.078518 -0.540192" rpy="0 0 0"/>
@@ -195,9 +195,9 @@
 
 <link name="gripper_left3_1">
   <inertial>
-    <origin xyz="0.019829355632424356 0.0007790703123061182 -0.003650374248943433" rpy="0 0 0"/>
-    <mass value="0.08842063664845462"/>
-    <inertia ixx="7e-06" iyy="4.2e-05" izz="4.8e-05" ixy="-5e-06" iyz="0.0" ixz="0.0"/>
+    <origin xyz="0.015692604770214558 -0.01214986348116125 -0.003642405326841902" rpy="0 0 0"/>
+    <mass value="0.08842063664845465"/>
+    <inertia ixx="1.6e-05" iyy="3.3e-05" izz="4.8e-05" ixy="1.6e-05" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.2105 -0.041878 -0.540214" rpy="0 0 0"/>
@@ -216,9 +216,9 @@
 
 <link name="gripper_left2_1">
   <inertial>
-    <origin xyz="0.03939777501373393 0.003555641746151951 -2.612087892084336e-05" rpy="0 0 0"/>
+    <origin xyz="0.03246595180129472 -0.022600862626259908 -9.99896592168703e-06" rpy="0 0 0"/>
     <mass value="0.05597691822827368"/>
-    <inertia ixx="3e-06" iyy="1.9e-05" izz="2e-05" ixy="-4e-06" iyz="-0.0" ixz="-2e-06"/>
+    <inertia ixx="6e-06" iyy="1.6e-05" izz="2e-05" ixy="7e-06" iyz="1e-06" ixz="-2e-06"/>
   </inertial>
   <visual>
     <origin xyz="-0.188135 -0.015798 -0.52743" rpy="0 0 0"/>
@@ -237,7 +237,7 @@
 
 <link name="gripper_base_1">
   <inertial>
-    <origin xyz="0.041301491018273684 5.606290499195893e-05 -0.010030403559479484" rpy="0 0 0"/>
+    <origin xyz="0.04130149101827388 5.6062904992743023e-05 -0.010030403559479262" rpy="0 0 0"/>
     <mass value="1.169410692896674"/>
     <inertia ixx="0.000963" iyy="0.000961" izz="0.001227" ixy="1e-06" iyz="0.0" ixz="6.1e-05"/>
   </inertial>
@@ -256,44 +256,44 @@
   </collision>
 </link>
 
-<link name="gripper_right1_1">
+<link name="gripper_left1_1">
   <inertial>
-    <origin xyz="0.01223321171965347 0.004770419490712843 -0.003454257366824476" rpy="0 0 0"/>
-    <mass value="0.08929866241945121"/>
-    <inertia ixx="9e-06" iyy="3.1e-05" izz="3.7e-05" ixy="1.1e-05" iyz="-0.0" ixz="0.0"/>
+    <origin xyz="0.011567740835341844 -0.00512808706657175 0.003657274411978828" rpy="0 0 0"/>
+    <mass value="0.09121097238098812"/>
+    <inertia ixx="1e-05" iyy="3.3e-05" izz="4e-05" ixy="-1.3e-05" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.269528 -0.069401 -0.540638" rpy="0 0 0"/>
+    <origin xyz="-0.261578 -0.010914 -0.532793" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_right1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_left1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.269528 -0.069401 -0.540638" rpy="0 0 0"/>
+    <origin xyz="-0.261578 -0.010914 -0.532793" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_right1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_left1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="gripper_left1_1">
+<link name="gripper_right1_1">
   <inertial>
-    <origin xyz="0.011599796095248693 -0.005260730473496657 0.003666749118023671" rpy="0 0 0"/>
-    <mass value="0.0908891604368029"/>
-    <inertia ixx="1e-05" iyy="3.3e-05" izz="4e-05" ixy="-1.2e-05" iyz="0.0" ixz="0.0"/>
+    <origin xyz="0.011567729805010085 0.00512811259080212 -0.0036581710499368203" rpy="0 0 0"/>
+    <mass value="0.09121095459991281"/>
+    <inertia ixx="1e-05" iyy="3.3e-05" izz="4e-05" ixy="1.3e-05" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.269528 -0.05099 -0.532768" rpy="0 0 0"/>
+    <origin xyz="-0.261578 -0.109477 -0.540614" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_left1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_right1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.269528 -0.05099 -0.532768" rpy="0 0 0"/>
+    <origin xyz="-0.261578 -0.109477 -0.540614" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_left1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mycobot320_description)/meshes/gripper_right1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -372,26 +372,26 @@
   <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
 </joint>
 
-<joint name="joint6output_to_gripper_base" type="fixed">
+<joint name="Rigid 47" type="fixed">
   <origin xyz="0.02 0.0 0.0" rpy="0 0 0"/>
   <parent link="link6_1"/>
   <child link="gripper_base_1"/>
 </joint>
 
-<joint name="gripper_right3_to_gripper_right1" type="revolute">
-  <origin xyz="0.059028 -0.009117 0.000446" rpy="0 0 0"/>
-  <parent link="gripper_right3_1"/>
-  <child link="gripper_right1_1"/>
-  <axis xyz="-0.0 0.000616 1.0"/>
-  <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
-</joint>
-
-<joint name="gripper_left3_to_gripper_left1" type="revolute">
-  <origin xyz="0.059028 0.009112 -0.007446" rpy="0 0 0"/>
+<joint name="Revolute 50" type="revolute">
+  <origin xyz="0.051078 -0.030964 -0.007421" rpy="0 0 0"/>
   <parent link="gripper_left3_1"/>
   <child link="gripper_left1_1"/>
   <axis xyz="0.0 -0.000616 -1.0"/>
   <limit upper="0.698132" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 51" type="revolute">
+  <origin xyz="0.051078 0.030959 0.000422" rpy="0 0 0"/>
+  <parent link="gripper_right3_1"/>
+  <child link="gripper_right1_1"/>
+  <axis xyz="-0.0 0.000616 1.0"/>
+  <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
 </joint>
 
 </robot>

@@ -111,23 +111,23 @@
   </actuator>
 </transmission>
 
-<transmission name="gripper_right3_to_gripper_right1_tran">
+<transmission name="Revolute 50_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="gripper_right3_to_gripper_right1">
+  <joint name="Revolute 50">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="gripper_right3_to_gripper_right1_actr">
+  <actuator name="Revolute 50_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="gripper_left3_to_gripper_left1_tran">
+<transmission name="Revolute 51_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="gripper_left3_to_gripper_left1">
+  <joint name="Revolute 51">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="gripper_left3_to_gripper_left1_actr">
+  <actuator name="Revolute 51_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
