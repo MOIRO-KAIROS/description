@@ -153,8 +153,8 @@
 
 <link name="gripper_base_1">
   <inertial>
-    <origin xyz="0.0355664843149987 -0.0001756055492085611 0.008326821944589002" rpy="0 0 0"/>
-    <mass value="0.5510932173775137"/>
+    <origin xyz="0.0355664843149987 -0.0001756055492085692 0.008326821944589002" rpy="0 0 0"/>
+    <mass value="0.5510932173775136"/>
     <inertia ixx="0.000508" iyy="0.00049" izz="0.000702" ixy="0.0" iyz="0.0" ixz="-0.000104"/>
   </inertial>
   <visual>
@@ -195,8 +195,8 @@
 
 <link name="gripper_right1_1">
   <inertial>
-    <origin xyz="0.011064466442332721 0.005257573311972415 0.00355996955743465" rpy="0 0 0"/>
-    <mass value="0.09298578687165747"/>
+    <origin xyz="0.011064466442332721 0.005257573311972401 0.00355996955743465" rpy="0 0 0"/>
+    <mass value="0.09298578687165746"/>
     <inertia ixx="1e-05" iyy="3.5e-05" izz="4.2e-05" ixy="1.3e-05" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
@@ -216,7 +216,7 @@
 
 <link name="gripper_left3_1">
   <inertial>
-    <origin xyz="0.0159904266297618 -0.012967523057109655 0.0034753903195801072" rpy="0 0 0"/>
+    <origin xyz="0.0159904266297618 -0.012967523057109649 0.0034753903195801072" rpy="0 0 0"/>
     <mass value="0.09059526730883281"/>
     <inertia ixx="1.8e-05" iyy="3.3e-05" izz="5e-05" ixy="1.8e-05" iyz="0.0" ixz="-0.0"/>
   </inertial>
@@ -256,11 +256,15 @@
   </collision>
 </link>
 
-<joint name="joint1" type="continuous">
+
+<!-- joint -->
+
+<joint name="joint1" type="revolute">
   <origin xyz="0.0 0.0 0.11" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="link1_1"/>
   <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="joint2" type="revolute">
@@ -268,7 +272,7 @@
   <parent link="link1_1"/>
   <child link="link2_1"/>
   <axis xyz="1.0 0.0 0.0"/>
-  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="joint3" type="revolute">
@@ -276,28 +280,31 @@
   <parent link="link2_1"/>
   <child link="link3_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
-  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="joint4" type="continuous">
+<joint name="joint4" type="revolute">
   <origin xyz="0.0 0.0 0.099" rpy="0 0 0"/>
   <parent link="link3_1"/>
   <child link="link4_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="joint5" type="continuous">
+<joint name="joint5" type="revolute">
   <origin xyz="0.045 0.0 0.045" rpy="0 0 0"/>
   <parent link="link4_1"/>
   <child link="link5_1"/>
   <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="joint6" type="continuous">
+<joint name="joint6" type="revolute">
   <origin xyz="0.04 0.0 0.05" rpy="0 0 0"/>
   <parent link="link5_1"/>
   <child link="link6_1"/>
   <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="gripper_base_to_link6" type="fixed">
@@ -310,7 +317,7 @@
   <origin xyz="0.06039 0.01822 0.003642" rpy="0 0 0"/>
   <parent link="gripper_base_1"/>
   <child link="gripper_right3_1"/>
-  <axis xyz="-0.0 -0.0 -1.0"/>
+  <axis xyz="0.0 0.0 -1.0"/>
   <limit upper="0.698132" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
@@ -326,7 +333,7 @@
   <origin xyz="0.06039 -0.01846 0.003642" rpy="0 0 0"/>
   <parent link="gripper_base_1"/>
   <child link="gripper_left3_1"/>
-  <axis xyz="-0.0 -0.0 -1.0"/>
+  <axis xyz="0.0 0.0 -1.0"/>
   <limit upper="0.0" lower="-0.698132" effort="100" velocity="100"/>
 </joint>
 
