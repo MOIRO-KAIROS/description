@@ -601,7 +601,15 @@
   <child link="XL430_base_right_1"/>
 </joint>
 
-<joint name="Revolute 12" type="revolute">
+<joint name="wheel_left" type="revolute">
+  <origin xyz="0.0283 0.0208 0.0145" rpy="0 0 0"/>
+  <parent link="XL430_base_left_1"/>
+  <child link="XL430_motor_left_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="wheel_right" type="revolute">
   <origin xyz="0.0283 -0.0208 0.0145" rpy="0 0 0"/>
   <parent link="XL430_base_right_1"/>
   <child link="XL430_motor_right_1"/>
@@ -737,14 +745,6 @@
   <origin xyz="-0.028 0.198 0.0855" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="XL430_base_left_1"/>
-</joint>
-
-<joint name="Revolute 43" type="revolute">
-  <origin xyz="0.0283 0.0208 0.0145" rpy="0 0 0"/>
-  <parent link="XL430_base_left_1"/>
-  <child link="XL430_motor_left_1"/>
-  <axis xyz="0.0 1.0 -0.0"/>
-  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 44" type="fixed">
