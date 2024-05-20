@@ -550,6 +550,27 @@
   </collision>
 </link>
 
+<link name="wheel_left_1">
+  <inertial>
+    <origin xyz="-0.00565685138065711 0.01343785651962029 -0.0056570173038905935" rpy="0 0 0"/>
+    <mass value="5.068160827641181"/>
+    <inertia ixx="0.014881" iyy="0.029142" izz="0.014881" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.005957 -0.2233 -0.105657" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.005957 -0.2233 -0.105657" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mycobot_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Rigid 5" type="fixed">
   <origin xyz="0.25 0.2169 0.058" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -698,6 +719,7 @@
   <axis xyz="0.0 0.0 1.0"/>
   <limit upper="0.3" lower="-0.7" effort="100" velocity="100"/> <!-- change upper to 0.3 and lower to -0.7-->
   <mimic joint="gripper_controller" multiplier="1" offset="0"/> <!-- add mimic and change multiplier to 1-->
+</joint>
 
 <joint name="Rigid 39" type="fixed">
   <origin xyz="0.0 0.0 0.11" rpy="0 0 0"/>
@@ -723,6 +745,12 @@
   <child link="XL430_motor_left_1"/>
   <axis xyz="0.0 1.0 -0.0"/>
   <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 44" type="fixed">
+  <origin xyz="0.005657 0.0045 0.005657" rpy="0 0 0"/>
+  <parent link="XL430_motor_left_1"/>
+  <child link="wheel_left_1"/>
 </joint>
 
 </robot>
