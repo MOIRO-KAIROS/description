@@ -2,8 +2,7 @@
 <robot name="mycobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 <xacro:include filename="$(find mycobot_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find mycobot_description)/urdf/mycobot.trans" />
-<xacro:include filename="$(find mycobot_description)/urdf/mycobot.gazebo" />
+
 <link name="base_link">
   <inertial>
     <origin xyz="8.368053381880458e-07 -1.7610424648219707e-05 0.27252999856366134" rpy="0 0 0"/>
