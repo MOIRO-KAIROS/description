@@ -172,7 +172,7 @@
   </collision>
 </link>
 
-<link name="wheel_1">
+<link name="wheel_right_1">
   <inertial>
     <origin xyz="-0.005656851380657197 -0.013437856519626423 -0.005656982696146395" rpy="0 0 0"/>
     <mass value="5.068160827641181"/>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="-0.005957 0.2233 -0.105657" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find mycobot_description)/meshes/wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mycobot_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.005957 0.2233 -0.105657" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find mycobot_description)/meshes/wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find mycobot_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -210,27 +210,6 @@
     <origin xyz="0.2075 -0.3153 -0.1003" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find mycobot_description)/meshes/XL430_motor_2.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="wheel_3">
-  <inertial>
-    <origin xyz="-0.005655334166857521 0.46003785651962026 0.005656982696109328" rpy="0 0 0"/>
-    <mass value="5.068160827641181"/>
-    <inertia ixx="0.014881" iyy="0.029142" izz="0.014881" ixy="-0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.005957 0.2233 -0.094343" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find mycobot_description)/meshes/wheel_3.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.005957 0.2233 -0.094343" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find mycobot_description)/meshes/wheel_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -571,7 +550,6 @@
   </collision>
 </link>
 
-
 <!-- joint -->
 
 <joint name="Rigid 5" type="fixed">
@@ -621,7 +599,7 @@
 <joint name="Rigid 14" type="fixed">
   <origin xyz="0.005657 -0.0045 0.005657" rpy="0 0 0"/>
   <parent link="XL430_motor_1"/>
-  <child link="wheel_1"/>
+  <child link="wheel_right_1"/>
 </joint>
 
 <joint name="Revolute 15" type="revolute">
@@ -630,12 +608,6 @@
   <child link="XL430_motor_2"/>
   <axis xyz="0.0 1.0 -0.0"/>
   <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
-</joint>
-
-<joint name="Rigid 16" type="fixed">
-  <origin xyz="0.213457 -0.5386 -0.005957" rpy="0 0 0"/>
-  <parent link="XL430_motor_2"/>
-  <child link="wheel_3"/>
 </joint>
 
 <joint name="Rigid 21" type="fixed">
