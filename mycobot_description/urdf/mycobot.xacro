@@ -708,7 +708,7 @@
   <child link="gripper_right1_1"/>
   <axis xyz="0.0 -0.0 1.0"/>
   <limit upper="0.7" lower="-0.3" effort="100" velocity="100"/> <!-- change upper to 0.7 and lower to -0.3-->
-  <mimic joint="gripper_controller" multiplier="-1" offset="0"/> <!-- add mimic and change multiplier to -1-->
+  <mimic joint="gripper_controller" multiplier="1" offset="0"/> <!-- add mimic and change multiplier to -1-->
 </joint>
 
 <joint name="Revolute 33" type="revolute">
@@ -726,7 +726,7 @@
   <child link="gripper_left1_1"/>
   <axis xyz="0.0 0.0 1.0"/>
   <limit upper="0.3" lower="-0.7" effort="100" velocity="100"/> <!-- change upper to 0.3 and lower to -0.7-->
-  <mimic joint="gripper_controller" multiplier="1" offset="0"/> <!-- add mimic and change multiplier to 1-->
+  <mimic joint="gripper_controller" multiplier="-1" offset="0"/> <!-- add mimic and change multiplier to 1-->
 </joint>
 
 <joint name="Rigid 39" type="fixed">
