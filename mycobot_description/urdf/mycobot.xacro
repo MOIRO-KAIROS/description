@@ -635,7 +635,7 @@
   <child link="cobot_body_1"/>
 </joint>
 
-<joint name="Revolute 24" type="revolute">
+<joint name="Revolute 1" type="revolute">
   <origin xyz="-0.0 0.0 0.11" rpy="0 0 0"/>
   <parent link="cobot_body_1"/>
   <child link="baseArm_v1_1"/>
@@ -643,7 +643,7 @@
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 25" type="revolute">
+<joint name="Revolute 2" type="revolute">
   <origin xyz="0.045 0.0 0.085" rpy="0 0 0"/>
   <parent link="baseArm_v1_1"/>
   <child link="lowerArm_v1_1"/>
@@ -651,14 +651,15 @@
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 26" type="continuous">
+<joint name="Revolute 3" type="revolute">
   <origin xyz="0.0 0.0 0.136" rpy="0 0 0"/>
   <parent link="lowerArm_v1_1"/>
   <child link="upperArm_v1_1"/>
   <axis xyz="-1.0 0.0 -0.0"/>
+  <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 27" type="revolute">
+<joint name="Revolute 4" type="revolute">
   <origin xyz="0.0 0.0 0.099" rpy="0 0 0"/>
   <parent link="upperArm_v1_1"/>
   <child link="pitchArm_v1_1"/>
@@ -666,7 +667,7 @@
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 28" type="revolute">
+<joint name="Revolute 5" type="revolute">
   <origin xyz="0.045 0.0 0.045" rpy="0 0 0"/>
   <parent link="pitchArm_v1_1"/>
   <child link="rollArm_v1_1"/>
@@ -674,7 +675,7 @@
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 29" type="revolute">
+<joint name="Revolute 6" type="revolute">
   <origin xyz="0.04 0.0 0.05" rpy="0 0 0"/>
   <parent link="rollArm_v1_1"/>
   <child link="gripperArm_v1_1"/>
