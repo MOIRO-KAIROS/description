@@ -6,4 +6,6 @@ URDF 변환 연습중
 mycobot320 모터 회전이 360가 안됨.
 -160, 160까지만 됨
 
+moi_arm_description : 스탠드
 
+mycobot_description : agv + mycobot
