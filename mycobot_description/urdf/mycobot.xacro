@@ -570,6 +570,8 @@
   </collision>
 </link>
 
+<!-- joint -->
+
 <joint name="Rigid 5" type="fixed">
   <origin xyz="0.25 0.2169 0.058" rpy="0 0 0"/>
   <parent link="base_link"/>
