@@ -14,42 +14,42 @@
   <gravity>true</gravity>
 </gazebo>
 
-<gazebo reference="baseArm_v1_1">
+<gazebo reference="basearm_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="lowerArm_v1_1">
+<gazebo reference="lowerarm_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="upperArm_v1_1">
+<gazebo reference="upperarm_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="pitchArm_v1_1">
+<gazebo reference="pitcharm_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="rollArm_1">
+<gazebo reference="rollarm_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="gripperArm_1">
+<gazebo reference="gripperarm_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
@@ -98,21 +98,7 @@
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="motor_left_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
 <gazebo reference="cobot_body_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="motor_right_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
@@ -147,13 +133,6 @@
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="caster_5">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
 <gazebo reference="caster_6">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
@@ -161,14 +140,35 @@
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="camera_link_1">
+<gazebo reference="caster_5">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="Camera_Zig_v2_1">
+<gazebo reference="motor_right_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="motor_left_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="camera_zig_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="camera_link_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
