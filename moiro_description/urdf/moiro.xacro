@@ -6,9 +6,9 @@
 <xacro:include filename="$(find moiro_description)/urdf/moiro.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="0.005355263561054088 -0.0009743746798552673 0.2595502059875776" rpy="0 0 0"/>
-    <mass value="9.51274328475089"/>
-    <inertia ixx="0.485755" iyy="0.519524" izz="0.426856" ixy="0.002055" iyz="0.002374" ixz="-0.012946"/>
+    <origin xyz="0.005150955585676035 -0.0009334785499818622 0.2594629875523824" rpy="0 0 0"/>
+    <mass value="9.890849791423904"/>
+    <inertia ixx="0.48614" iyy="0.520086" izz="0.427787" ixy="0.002057" iyz="0.002374" ixz="-0.01295"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -529,6 +529,27 @@
   </collision>
 </link>
 
+<link name="base_scan">
+  <inertial>
+    <origin xyz="1.4890131030019722e-05 -0.008617362464656674 0.01114526026515611" rpy="0 0 0"/>
+    <mass value="0.4177280575470181"/>
+    <inertia ixx="0.000281" iyy="0.000143" izz="0.000351" ixy="-0.0" iyz="-3.9e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000412 -0.003127 -0.271745" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moiro_description)/meshes/base_scan.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000412 -0.003127 -0.271745" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moiro_description)/meshes/base_scan.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Revolute 1" type="revolute">
   <origin xyz="0.0 0.0 0.09" rpy="0 0 0"/>
   <parent link="cobot_body"/>
@@ -689,10 +710,16 @@
   <child link="camera_link"/>
 </joint>
 
-<joint name="Rigid 71" type="fixed">
+<joint name="Rigid 74" type="fixed">
   <origin xyz="0.0 0.0 0.501" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="base_plate"/>
+</joint>
+
+<joint name="joint_base_scan" type="fixed">
+  <origin xyz="-0.000412 0.003127 0.271745" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_scan"/>
 </joint>
 
 </robot>
