@@ -108,7 +108,7 @@
   </collision>
 </link>
 
-<link name="XL430_base_right">
+<link name="base_right">
   <inertial>
     <origin xyz="0.015671495929223667 -0.00632193052184804 0.014483637367895638" rpy="0 0 0"/>
     <mass value="0.3239556630537195"/>
@@ -129,7 +129,7 @@
   </collision>
 </link>
 
-<link name="XL430_motor_right">
+<link name="motor_right">
   <inertial>
     <origin xyz="-3.045443770730309e-06 -0.002385176775222958 6.646072581162343e-14" rpy="0 0 0"/>
     <mass value="0.011770865349524429"/>
@@ -171,7 +171,7 @@
   </collision>
 </link>
 
-<link name="plate">
+<link name="base_plate">
   <inertial>
     <origin xyz="2.349014429479716e-17 2.217469621428852e-14 0.009999999999990572" rpy="0 0 0"/>
     <mass value="6.078748022419618"/>
@@ -465,7 +465,7 @@
   </collision>
 </link>
 
-<link name="Intel_Realsense_D435">
+<link name="camera_link">
   <inertial>
     <origin xyz="0.0015201693083259915 -5.299270958027507e-07 0.012451799923456464" rpy="0 0 0"/>
     <mass value="0.3783774808035141"/>
@@ -507,7 +507,7 @@
   </collision>
 </link>
 
-<link name="XL430_base_left">
+<link name="base_left">
   <inertial>
     <origin xyz="0.015671495929223758 0.006321930521842017 0.014516362632086596" rpy="0 0 0"/>
     <mass value="0.3239556630537195"/>
@@ -528,7 +528,7 @@
   </collision>
 </link>
 
-<link name="XL430_motor_left">
+<link name="motor_left">
   <inertial>
     <origin xyz="-3.0454437706458498e-06 0.0023851767752167963 -8.416878305439468e-14" rpy="0 0 0"/>
     <mass value="0.011770865349524429"/>
@@ -599,40 +599,40 @@
 <joint name="Rigid 11" type="fixed">
   <origin xyz="-0.028 -0.198 0.0855" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="XL430_base_right"/>
+  <child link="base_right"/>
 </joint>
 
 <joint name="wheel_left" type="revolute">
   <origin xyz="0.0283 0.0208 0.0145" rpy="0 0 0"/>
-  <parent link="XL430_base_left"/>
-  <child link="XL430_motor_left"/>
+  <parent link="base_left"/>
+  <child link="motor_left"/>
   <axis xyz="0.0 1.0 -0.0"/>
   <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
 <joint name="wheel_right" type="revolute">
   <origin xyz="0.0283 -0.0208 0.0145" rpy="0 0 0"/>
-  <parent link="XL430_base_right"/>
-  <child link="XL430_motor_right"/>
+  <parent link="base_right"/>
+  <child link="motor_right"/>
   <axis xyz="-0.0 -1.0 0.0"/>
   <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
 <joint name="Rigid 14" type="fixed">
   <origin xyz="0.005657 -0.0045 0.005657" rpy="0 0 0"/>
-  <parent link="XL430_motor_right"/>
+  <parent link="motor_right"/>
   <child link="wheel_right"/>
 </joint>
 
 <joint name="Rigid 21" type="fixed">
   <origin xyz="0.0 0.0 0.501" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="plate"/>
+  <child link="base_plate"/>
 </joint>
 
 <joint name="Rigid 23" type="fixed">
   <origin xyz="0.0 0.0 0.02" rpy="0 0 0"/>
-  <parent link="plate"/>
+  <parent link="base_plate"/>
   <child link="cobot_body"/>
 </joint>
 
@@ -734,7 +734,7 @@
 <joint name="Rigid 39" type="fixed">
   <origin xyz="0.0 0.0 0.11" rpy="0 0 0"/>
   <parent link="camera_stand"/>
-  <child link="Intel_Realsense_D435"/>
+  <child link="camera_link"/>
 </joint>
 
 <joint name="Rigid 40" type="fixed">
@@ -746,12 +746,12 @@
 <joint name="Rigid 42" type="fixed">
   <origin xyz="-0.028 0.198 0.0855" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="XL430_base_left"/>
+  <child link="base_left"/>
 </joint>
 
 <joint name="Rigid 44" type="fixed">
   <origin xyz="0.005657 0.0045 0.005657" rpy="0 0 0"/>
-  <parent link="XL430_motor_left"/>
+  <parent link="motor_left"/>
   <child link="wheel_left"/>
 </joint>
 

@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/minha/moiro_ws/install/realsense2_camera/include/**",
+        "/home/minha/moiro_ws/install/realsense2_camera_msgs/include/**",
+        "/home/minha/moiro_ws/install/moiro_interfaces/include/**",
+        "/home/minha/colcon_ws/install/mypalletizer_interfaces/include/**",
+        "/home/minha/colcon_ws/install/mycobot_interfaces/include/**",
+        "/home/minha/colcon_ws/install/mecharm_interfaces/include/**",
+        "/home/minha/ros2_ws_tut/install/usb_cam/include/**",
+        "/home/minha/ros2_ws/install/yolov8_msgs/include/**",
+        "/home/minha/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/minha/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/minha/moiro_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
