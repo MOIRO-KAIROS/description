@@ -4,7 +4,6 @@
 <xacro:include filename="$(find moiro_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find moiro_description)/urdf/moiro.trans" />
 <xacro:include filename="$(find moiro_description)/urdf/moiro.gazebo" />
-
 <link name="base_link">
   <inertial>
     <origin xyz="0.005355263561054088 -0.0009743746798552673 0.2595502059875776" rpy="0 0 0"/>
@@ -469,9 +468,9 @@
 
 <link name="camera_zig">
   <inertial>
-    <origin xyz="-0.0032513672191570864 0.04404933875225113 0.031685069930480037" rpy="0 0 0"/>
+    <origin xyz="0.01453009991903656 0.044049338752250145 0.028344157098708522" rpy="0 0 0"/>
     <mass value="0.059863707592883605"/>
-    <inertia ixx="8.3e-05" iyy="4.8e-05" izz="6.1e-05" ixy="0.0" iyz="-5e-06" ixz="2e-05"/>
+    <inertia ixx="9.5e-05" iyy="4.8e-05" izz="4.9e-05" ixy="-3e-06" iyz="-5e-06" ixz="-2e-06"/>
   </inertial>
   <visual>
     <origin xyz="-0.24875 0.045 -0.523" rpy="0 0 0"/>
@@ -490,19 +489,19 @@
 
 <link name="camera_link">
   <inertial>
-    <origin xyz="0.010233937750200123 -5.299843264592978e-07 0.006588359530641186" rpy="0 0 0"/>
+    <origin xyz="0.012171542279409253 -5.299843283462433e-07 -4.8580261040487294e-05" rpy="0 0 0"/>
     <mass value="0.37833297071846606"/>
-    <inertia ixx="0.000239" iyy="3.5e-05" izz="0.000239" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+    <inertia ixx="0.000238" iyy="3.5e-05" izz="0.00024" ixy="-0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.242995 -0.00175 -0.564912" rpy="0 0 0"/>
+    <origin xyz="-0.26675 -0.00175 -0.561285" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find moiro_description)/meshes/camera_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.242995 -0.00175 -0.564912" rpy="0 0 0"/>
+    <origin xyz="-0.26675 -0.00175 -0.561285" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find moiro_description)/meshes/camera_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -529,8 +528,6 @@
     </geometry>
   </collision>
 </link>
-
-<!-- joint -->
 
 <joint name="Revolute 1" type="revolute">
   <origin xyz="0.0 0.0 0.09" rpy="0 0 0"/>
@@ -680,19 +677,19 @@
   <child link="motor_left"/>
 </joint>
 
-<joint name="joint_zig" type="fixed">
-  <origin xyz="0.24875 -0.045 0.523" rpy="0 0 0"/>
+<joint name="joint_camera" type="fixed">
+  <origin xyz="0.24875 -0.045 0.523" rpy="0 -0.575959 0"/>
   <parent link="base_link"/>
   <child link="camera_zig"/>
 </joint>
 
-<joint name="joint_camera" type="fixed">
-  <origin xyz="-0.005755 0.04675 0.041912" rpy="0 0 0"/>
+<joint name="Rigid 70" type="fixed">
+  <origin xyz="0.018 0.04675 0.038285" rpy="0 0 0"/>
   <parent link="camera_zig"/>
   <child link="camera_link"/>
 </joint>
 
-<joint name="base_plate_joint" type="fixed">
+<joint name="Rigid 71" type="fixed">
   <origin xyz="0.0 0.0 0.501" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="base_plate"/>
