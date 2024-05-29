@@ -25,7 +25,7 @@
   </collision>
 </link>
 
-<link name="basearm">
+<link name="basearm_1">
   <inertial>
     <origin xyz="0.006896766224728663 -2.0863790969221033e-15 0.05549018686904683" rpy="0 0 0"/>
     <mass value="3.4735206294395446"/>
@@ -34,19 +34,19 @@
   <visual>
     <origin xyz="0.0 0.0 -0.606" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/basearm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/basearm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 0.0 -0.606" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/basearm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/basearm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="lowerarm">
+<link name="lowerarm_1">
   <inertial>
     <origin xyz="0.036906585755669324 -2.1017837997117547e-15 0.06799999999999129" rpy="0 0 0"/>
     <mass value="5.91988968680626"/>
@@ -55,19 +55,19 @@
   <visual>
     <origin xyz="-0.045 0.0 -0.691" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/lowerarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/lowerarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.045 0.0 -0.691" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/lowerarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/lowerarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="upperarm">
+<link name="upperarm_1">
   <inertial>
     <origin xyz="-0.03502268825299596 1.5060537258141013e-15 0.04949999999999133" rpy="0 0 0"/>
     <mass value="4.802107093668197"/>
@@ -76,19 +76,19 @@
   <visual>
     <origin xyz="-0.045 0.0 -0.827" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/upperarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/upperarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.045 0.0 -0.827" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/upperarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/upperarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="pitcharm">
+<link name="pitcharm_1">
   <inertial>
     <origin xyz="0.034423872869188424 5.291448440797201e-15 0.010576127130799362" rpy="0 0 0"/>
     <mass value="2.265107015236222"/>
@@ -97,19 +97,19 @@
   <visual>
     <origin xyz="-0.045 -0.0 -0.926" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/pitcharm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/pitcharm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.045 -0.0 -0.926" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/pitcharm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/pitcharm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="rollarm">
+<link name="rollarm_1">
   <inertial>
     <origin xyz="-3.816391647148976e-15 6.350716433653324e-15 0.042116696506125595" rpy="0 0 0"/>
     <mass value="3.029827579494103"/>
@@ -118,19 +118,19 @@
   <visual>
     <origin xyz="-0.09 -0.0 -0.971" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/rollarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/rollarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.09 -0.0 -0.971" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/rollarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/rollarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="gripperarm">
+<link name="gripperarm_1">
   <inertial>
     <origin xyz="0.00999999999999615 6.341038805146582e-15 -9.103828801926284e-15" rpy="0 0 0"/>
     <mass value="0.6042068071016569"/>
@@ -139,19 +139,19 @@
   <visual>
     <origin xyz="-0.13 -0.0 -1.021" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/gripperarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/gripperarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.13 -0.0 -1.021" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/gripperarm.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/gripperarm_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="cobot_camera">
+<link name="cobot_camera_1">
   <inertial>
     <origin xyz="0.017423960091247193 0.003253426631193808 0.005819385718719872" rpy="0 0 0"/>
     <mass value="0.21027144182469326"/>
@@ -160,19 +160,19 @@
   <visual>
     <origin xyz="-0.15 -0.0 -1.021" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/cobot_camera.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/cobot_camera_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.15 -0.0 -1.021" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/cobot_camera.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/cobot_camera_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="cobot_body">
+<link name="cobot_body_1">
   <inertial>
     <origin xyz="-2.1294138884612695e-08 -0.012465741614899743 0.04360477337725388" rpy="0 0 0"/>
     <mass value="9.352590646947165"/>
@@ -181,19 +181,19 @@
   <visual>
     <origin xyz="0.0 0.0 -0.516" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/cobot_body.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/cobot_body_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 0.0 -0.516" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/cobot_body.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/cobot_body_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="wheel_right">
+<link name="wheel_right_1">
   <inertial>
     <origin xyz="7.185686845753172e-07 -0.013441732021015451 6.740004027117052e-08" rpy="0 0 0"/>
     <mass value="0.6403675217821955"/>
@@ -202,19 +202,19 @@
   <visual>
     <origin xyz="-0.000298 0.2233 -0.1025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/wheel_right.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.000298 0.2233 -0.1025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/wheel_right.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="wheel_left">
+<link name="wheel_left_1">
   <inertial>
     <origin xyz="5.370332256415832e-07 0.013441732021011232 2.8938916707410556e-08" rpy="0 0 0"/>
     <mass value="0.6403675217821955"/>
@@ -223,19 +223,19 @@
   <visual>
     <origin xyz="-0.000298 -0.2233 -0.1025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/wheel_left.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.000298 -0.2233 -0.1025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/wheel_left.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="camera_zig">
+<link name="camera_zig_1">
   <inertial>
     <origin xyz="0.014530099919036615 0.044049338752250145 0.028344157098708633" rpy="0 0 0"/>
     <mass value="0.059863707592883605"/>
@@ -244,19 +244,19 @@
   <visual>
     <origin xyz="-0.24875 0.045 -0.52" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/camera_zig.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/camera_zig_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.24875 0.045 -0.52" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/camera_zig.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/camera_zig_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="imu_link">
+<link name="imu_link_1">
   <inertial>
     <origin xyz="-0.04153434985377516 -0.031630029317067154 0.002586806247330431" rpy="0 0 0"/>
     <mass value="0.030287554797551564"/>
@@ -265,19 +265,19 @@
   <visual>
     <origin xyz="-0.048037 -0.045 -0.1" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/imu_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/imu_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.048037 -0.045 -0.1" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/imu_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/imu_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="camera_link">
+<link name="camera_link_1">
   <inertial>
     <origin xyz="0.012171550992974123 1.5521819223018093e-06 -4.879803335100519e-05" rpy="0 0 0"/>
     <mass value="0.37833295379166415"/>
@@ -286,14 +286,14 @@
   <visual>
     <origin xyz="-0.26675 -0.00175 -0.558285" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/camera_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/camera_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.26675 -0.00175 -0.558285" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/camera_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/camera_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -382,7 +382,7 @@
   </collision>
 </link>
 
-<link name="motor_right">
+<link name="motor_right_1">
   <inertial>
     <origin xyz="-0.00788584475935802 -0.006913170455323331 0.014484211131926578" rpy="0 0 0"/>
     <mass value="0.055170345827871496"/>
@@ -391,19 +391,19 @@
   <visual>
     <origin xyz="0.004 0.198 -0.088" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/motor_right.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/motor_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.004 0.198 -0.088" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/motor_right.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/motor_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="motor_left">
+<link name="motor_left_1">
   <inertial>
     <origin xyz="-0.007885844759358442 0.006913170455319778 0.014515788868055449" rpy="0 0 0"/>
     <mass value="0.05517034582787142"/>
@@ -412,19 +412,19 @@
   <visual>
     <origin xyz="0.004 -0.198 -0.088" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/motor_left.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/motor_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.004 -0.198 -0.088" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/motor_left.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/motor_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="base_plate">
+<link name="base_plate_1">
   <inertial>
     <origin xyz="3.024732238173218e-08 -0.020354187478525226 0.008984617763925118" rpy="0 0 0"/>
     <mass value="0.5585010585602752"/>
@@ -433,108 +433,129 @@
   <visual>
     <origin xyz="-0.0 0.0 -0.498" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/base_plate.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/base_plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 0.0 -0.498" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find moiro_description)/meshes/base_plate.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find moiro_description)/meshes/base_plate_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_scan_1">
+  <inertial>
+    <origin xyz="1.4890131030027799e-05 -0.008617362464656688 0.011145262430183378" rpy="0 0 0"/>
+    <mass value="0.4177280575470181"/>
+    <inertia ixx="0.000281" iyy="0.000143" izz="0.000351" ixy="-0.0" iyz="-3.9e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000412 -0.003127 -0.268745" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moiro_description)/meshes/base_scan_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000412 -0.003127 -0.268745" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find moiro_description)/meshes/base_scan_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <joint name="mycobot_joint_1" type="revolute">
   <origin xyz="0.0 0.0 0.09" rpy="0 0 0"/>
-  <parent link="cobot_body"/>
-  <child link="basearm"/>
+  <parent link="cobot_body_1"/>
+  <child link="basearm_1"/>
   <axis xyz="-0.0 0.0 1.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="mycobot_joint_2" type="revolute">
   <origin xyz="0.045 0.0 0.085" rpy="0 0 0"/>
-  <parent link="basearm"/>
-  <child link="lowerarm"/>
+  <parent link="basearm_1"/>
+  <child link="lowerarm_1"/>
   <axis xyz="1.0 0.0 0.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="mycobot_joint_3" type="revolute">
   <origin xyz="0.0 0.0 0.136" rpy="0 0 0"/>
-  <parent link="lowerarm"/>
-  <child link="upperarm"/>
+  <parent link="lowerarm_1"/>
+  <child link="upperarm_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="mycobot_joint_4" type="revolute">
   <origin xyz="0.0 0.0 0.099" rpy="0 0 0"/>
-  <parent link="upperarm"/>
-  <child link="pitcharm"/>
+  <parent link="upperarm_1"/>
+  <child link="pitcharm_1"/>
   <axis xyz="1.0 -0.0 0.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="mycobot_joint_5" type="revolute">
   <origin xyz="0.045 0.0 0.045" rpy="0 0 0"/>
-  <parent link="pitcharm"/>
-  <child link="rollarm"/>
+  <parent link="pitcharm_1"/>
+  <child link="rollarm_1"/>
   <axis xyz="0.0 0.0 1.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="mycobot_joint_6" type="revolute">
   <origin xyz="0.04 0.0 0.05" rpy="0 0 0"/>
-  <parent link="rollarm"/>
-  <child link="gripperarm"/>
+  <parent link="rollarm_1"/>
+  <child link="gripperarm_1"/>
   <axis xyz="1.0 -0.0 0.0"/>
   <limit upper="2.792527" lower="-2.792527" effort="100" velocity="100"/>
 </joint>
 
 <joint name="cobot_camera_joint" type="fixed">
   <origin xyz="0.02 0.0 0.0" rpy="0 0 0"/>
-  <parent link="gripperarm"/>
-  <child link="cobot_camera"/>
+  <parent link="gripperarm_1"/>
+  <child link="cobot_camera_1"/>
 </joint>
 
 <joint name="mycobot_plate_joint" type="fixed">
   <origin xyz="-0.0 0.0 0.018" rpy="0 0 0"/>
-  <parent link="base_plate"/>
-  <child link="cobot_body"/>
+  <parent link="base_plate_1"/>
+  <child link="cobot_body_1"/>
 </joint>
 
 <joint name="joint_wheel_right" type="continuous">
   <origin xyz="0.004298 -0.0253 0.0145" rpy="0 0 0"/>
-  <parent link="motor_right"/>
-  <child link="wheel_right"/>
+  <parent link="motor_right_1"/>
+  <child link="wheel_right_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
 <joint name="joint_wheel_left" type="continuous">
   <origin xyz="0.004298 0.0253 0.0145" rpy="0 0 0"/>
-  <parent link="motor_left"/>
-  <child link="wheel_left"/>
+  <parent link="motor_left_1"/>
+  <child link="wheel_left_1"/>
   <axis xyz="0.0 1.0 -0.0"/>
 </joint>
 
 <joint name="joint_camera" type="fixed">
   <origin xyz="0.24875 -0.045 0.52" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="camera_zig"/>
+  <child link="camera_zig_1"/>
 </joint>
 
 <joint name="imu_joint" type="fixed">
   <origin xyz="0.048037 0.045 0.1" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="imu_link"/>
+  <child link="imu_link_1"/>
 </joint>
 
 <joint name="camera_zig_joint" type="fixed">
   <origin xyz="0.018 0.04675 0.038285" rpy="0 0 0"/>
-  <parent link="camera_zig"/>
-  <child link="camera_link"/>
+  <parent link="camera_zig_1"/>
+  <child link="camera_link_1"/>
 </joint>
 
 <joint name="Rigid 79" type="fixed">
@@ -564,19 +585,25 @@
 <joint name="Rigid 83" type="fixed">
   <origin xyz="-0.004 -0.198 0.088" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="motor_right"/>
+  <child link="motor_right_1"/>
 </joint>
 
 <joint name="Rigid 84" type="fixed">
   <origin xyz="-0.004 0.198 0.088" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="motor_left"/>
+  <child link="motor_left_1"/>
 </joint>
 
 <joint name="Rigid 85" type="fixed">
   <origin xyz="0.0 0.0 0.498" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="base_plate"/>
+  <child link="base_plate_1"/>
+</joint>
+
+<joint name="Rigid 86" type="fixed">
+  <origin xyz="-0.000412 0.003127 0.268745" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_scan_1"/>
 </joint>
 
 </robot>
