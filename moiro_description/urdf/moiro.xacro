@@ -11,14 +11,14 @@
     <inertia ixx="0.498632" iyy="0.533352" izz="0.429421" ixy="0.002003" iyz="0.002378" ixz="-0.014194"/>
   </inertial>
   <visual>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 -0.09" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find moiro_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 -0.09" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find moiro_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -541,13 +541,13 @@
 </joint>
 
 <joint name="joint_camera" type="fixed">
-  <origin xyz="0.24875 -0.045 0.52" rpy="0 0 0"/>
+  <origin xyz="0.24875 -0.045 0.43" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="camera_zig_1"/>
 </joint>
 
 <joint name="imu_joint" type="fixed">
-  <origin xyz="0.048037 0.045 0.1" rpy="0 0 0"/>
+  <origin xyz="0.048037 0.045 0.01" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="imu_link_1"/>
 </joint>
@@ -559,49 +559,49 @@
 </joint>
 
 <joint name="Rigid 79" type="fixed">
-  <origin xyz="-0.238132 0.037118 0.145" rpy="0 0 0"/>
+  <origin xyz="-0.238132 0.037118 0.055" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="caster_6"/>
 </joint>
 
 <joint name="Rigid 80" type="fixed">
-  <origin xyz="-0.238132 -0.037118 0.145" rpy="0 0 0"/>
+  <origin xyz="-0.238132 -0.037118 0.055" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="caster_5"/>
 </joint>
 
 <joint name="Rigid 81" type="fixed">
-  <origin xyz="0.238132 -0.037118 0.145" rpy="0 0 0"/>
+  <origin xyz="0.238132 -0.037118 0.055" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="caster_4"/>
 </joint>
 
 <joint name="Rigid 82" type="fixed">
-  <origin xyz="0.238132 0.037118 0.055" rpy="0 0 0"/>
+  <origin xyz="0.238132 0.037118 -0.035" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="caster_3"/>
 </joint>
 
 <joint name="Rigid 83" type="fixed">
-  <origin xyz="-0.004 -0.198 0.088" rpy="0 0 0"/>
+  <origin xyz="-0.004 -0.198 -0.002" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="motor_right_1"/>
 </joint>
 
 <joint name="Rigid 84" type="fixed">
-  <origin xyz="-0.004 0.198 0.088" rpy="0 0 0"/>
+  <origin xyz="-0.004 0.198 -0.002" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="motor_left_1"/>
 </joint>
 
 <joint name="Rigid 85" type="fixed">
-  <origin xyz="0.0 0.0 0.498" rpy="0 0 0"/>
+  <origin xyz="0.0 0.0 0.408" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="base_plate_1"/>
 </joint>
 
 <joint name="Rigid 86" type="fixed">
-  <origin xyz="-0.000412 0.003127 0.268745" rpy="0 0 0"/>
+  <origin xyz="-0.000412 0.003127 0.178745" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="base_scan_1"/>
 </joint>
