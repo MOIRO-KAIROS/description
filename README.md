@@ -9,3 +9,18 @@ mycobot320 모터 회전이 360가 안됨.
 moi_arm_description : 스탠드
 
 mycobot_description : agv + mycobot
+
+fusion 360으로 변환시
+setup.cfg에서
+
+[develop]
+script-dir=$base/lib/moiro_description
+[install]
+install-scripts=$base/lib/moiro_description
+를
+
+[develop]
+script_dir=$base/lib/moiro_description
+[install]
+install_scripts=$base/lib/moiro_description
+로 수정
