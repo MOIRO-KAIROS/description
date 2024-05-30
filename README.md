@@ -1,4 +1,11 @@
-# MOI
+# Description
+
+## This repository is no longer being updated.
+### If you want to see moiro_description & mycobot_description, click on the [link](https://github.com/MOIRO-KAIROS/moiro_description).
+### If you want to see moi_arm_description, click on the [link](https://github.com/MOIRO-KAIROS/moi_description)).
+
+-----------------------------------------------------------------------------------------------------------
+
 Making URDF study
 URDF 변환 연습중
 참고자료 https://github.com/syuntoku14/fusion2urdf?tab=readme-ov-file
